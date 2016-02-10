@@ -1,5 +1,5 @@
-#lightski's dotfiles
-##About
+# lightski's dotfiles
+## About
 Super basic dotfiles repo
 Tracks my basic configs for:
 - git
@@ -9,7 +9,7 @@ Tracks my basic configs for:
 Other solutions seemed very heavy-handed for this, so I opted for a barebones shell script.
 Note you will need to install these tools on your system. This repo is only configuration.
 
-##Usage
+## Usage
 I do not recommend cloning and using these willy-nilly. 
 You are better off reading my configurations and taking a line here or there.
 Please be *sure* you know what you're doing before installing this!
@@ -21,6 +21,6 @@ If you insist on installing:
 	./install.sh
 3. Open a new shell to see effects
 
-##Disclaimer
+## Disclaimer
 Use these configs however you like; I am not responsible for what you do.
 
