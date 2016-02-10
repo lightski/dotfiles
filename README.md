@@ -18,8 +18,7 @@ If you insist on installing:
 1.	 Clone this repo (preferably into ~/.dotfiles)
 2.	 Run install.sh
 	```
-		sudo chmod u+x install.sh
-		./install.sh
+		chmod u+x install.sh && ./install.sh
 	```
 3.	 Open a new shell to see effects
 
