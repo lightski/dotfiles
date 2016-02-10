@@ -15,12 +15,12 @@ Please be **sure** you know what you're doing before installing this!
 
 If you insist on installing:
 
-1.	 Clone this repo
+1.	 Clone this repo (preferably into ~/.dotfiles)
 2.	 Run install.sh
-```
+	```
 		sudo chmod u+x install.sh
 		./install.sh
-```
+	```
 3.	 Open a new shell to see effects
 
 ## Disclaimer
