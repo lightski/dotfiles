@@ -11,9 +11,10 @@ Note you will need to install the tools on your system. This repo is only config
 ## Usage
 I do NOT recommend cloning and using this repository (unless you are me??!). 
 You are better off reading my configurations and taking a line here or there.
-Please be *sure* you know what you're doing before installing this!
+Please be **sure** you know what you're doing before installing this!
 
 If you insist on installing:
+
 1.	 Clone this repo
 2.	 Run install.sh
 ```
