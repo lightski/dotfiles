@@ -7,7 +7,7 @@ alias sar="sudo aptitude remove"
 
 # apache2 admin 
 alias ael="sudo tail -f /var/log/apache2/error.log"
-alias sar="sudo service apache2 restart"
+alias ssar="sudo service apache2 restart"
 
 # rsync copies all, displays progress, and resumes transfers by default
 alias rsync="rsync -avzP"
@@ -54,4 +54,9 @@ alias snpy='nvpy'
 
 # 20160108 -- prompt on delete of -r or >3 files. just in case
 alias rm='rm -I'
+
+# 20160212 simpler vagrant
+alias vu='vagrant up'
+alias vh='vagrant halt'
+alias vs='vagrant ssh'
 

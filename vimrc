@@ -46,8 +46,8 @@ Bundle 'Raimondi/delimitMate.git'
 " file browsing
 Bundle 'scrooloose/nerdtree'
 " themes
-Bundle 'freeo/vim-kalisi'
-Bundle 'tomasr/molokai'
+"Bundle 'freeo/vim-kalisi'
+"Bundle 'tomasr/molokai'
 Bundle 'altercation/vim-colors-solarized'
 " vimwiki is best wiki
 Bundle 'vimwiki/vimwiki'
@@ -91,3 +91,7 @@ colorscheme solarized
 " get simplenote login creds
 source ~/.simplenoterc
 
+" vim statusline (AWEsome. Note this is installed systemwide via pip)
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
