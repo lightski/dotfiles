@@ -7,3 +7,8 @@ export ANDROID_HOME=$HOME/Android/Sdk
 if [ "$TERM" = "xterm" ]; then
 	export TERM=xterm-256color
 fi
+
+# default editor=vim
+export EDITOR="vim"
+export VISUAL="vim"
+
