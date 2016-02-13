@@ -1,6 +1,4 @@
-# Sample gitconfig
-#
-
+# configuration for git
 [hub]
         protocol = https
 [user]
@@ -8,6 +6,10 @@
         email = drleitzke@gmail.com
 [credential]
         helper = cache
+[credential "https://github.com"]
+    username = lightski
+[credential "https://bitbucket.com"]
+    username = lightski
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
