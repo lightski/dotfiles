@@ -1,25 +1,26 @@
+"vim config
+"editor defaults
 set number		"line numbers
 syntax enable	"syntax highlighting
-
 set fileformat=unix	"sane text files
 set encoding=utf-8
-
 set tabstop=4		"sane editing
 set shiftwidth=4
 set softtabstop=4
 
+"key re-binds
 inoremap <c-space> <c-n> "autocompletion with ctrl+space
 inoremap <Nul> <c-n>
-
-map <f12> :!ctags -R .<cr>	"ctags binding to F12
-
-"press F4 to toggle highlighting on/off and show current value
+"ctags binding to F12
+map <f12> :!ctags -R .<cr>
+"sipmlernote
+cmap Sn Simplenote 
+"save files as sudo even if not started as sudo
+cmap w!! w !sudo tee > /dev/null %
+"F4 toggles search highlighting and show current value
 :nnoremap <F4> :set hlsearch! hlsearch?<CR>
 
-"allow saving of files as sudo when I forgot to start vim using sudo
-cmap w!! w !sudo tee > /dev/null %
-
-"next section for vundle, plugin manager
+"vundle specific settings 
 set nocompatible	"be iMproved
 filetype off		"required! for vundle
 set rtp+=~/.vim/bundle/Vundle.vim

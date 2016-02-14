@@ -22,6 +22,9 @@ If you insist on installing:
 	```
 3.	 Open a new shell to see effects
 
+## TODO
+[]Refactor vim configuration? Could increase modularity by adding individual files to .vim/config/
+
 ## Disclaimer
 Use these configs however you like; I am not responsible for what you do.
 
