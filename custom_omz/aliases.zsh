@@ -1,4 +1,4 @@
-# add extra aliases to zsh
+## add extra aliases to zsh
 # quicker zsh config and aptitude
 alias reload!=". ~/.zshrc"
 alias update="sudo aptitude update && sudo aptitude upgrade"
@@ -56,7 +56,8 @@ alias snpy='nvpy'
 alias rm='rm -I'
 
 # 20160212 simpler vagrant
-alias vu='vagrant up'
-alias vh='vagrant halt'
-alias vs='vagrant ssh'
-
+alias v='vagrant'
+alias vup='vagrant up'
+alias vha='vagrant halt'
+alias vsh='vagrant ssh'
+alias vst='vagrant status'
