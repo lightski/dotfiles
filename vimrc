@@ -14,7 +14,7 @@ inoremap <Nul> <c-n>
 "ctags binding to F12
 map <f12> :!ctags -R .<cr>
 "sipmlernote
-cmap Sn Simplenote 
+cmap Sn Simplenote -
 "save files as sudo even if not started as sudo
 cmap w!! w !sudo tee > /dev/null %
 "F4 toggles search highlighting and show current value
@@ -93,6 +93,7 @@ colorscheme solarized
 source ~/.simplenoterc
 
 " vim statusline (AWEsome. Note this is installed systemwide via pip)
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
+
