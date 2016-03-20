@@ -1,0 +1,100 @@
+Config {
+	-- appearance
+	  font =		"xft:Bitstream Vera Sans Mono:size=9:bold:antialias=true"
+	, position =	Top
+	, border =		BottomB
+
+	-- general behavior
+	, lowerOnStart =	 False	-- send to bottom of window stack on start
+	, hideOnStart =		 False	-- start with window unmapped (hidden)
+	, allDesktops =		 True	-- show on all desktops
+	, overrideRedirect = True	-- set Override Redirect Flag (Xlib)
+	, pickBroadest =	 False	-- choose widest display (multi-monitor)
+	, persistent =		 True	-- enable/disable hiding (True = disabled)
+
+	-- layout
+	, sepChar =	"%"		-- delineator between plugin names and straight text
+	, alignSep = "}{"	-- separator between left-right alignment
+	, template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %KORD% | %date% "
+
+	-- plugins
+	--	Numbers can be autocolored.
+	--	xmobar decides color based on 3-tier/2-cutoff
+	--	command options:
+	--		--Low for low cutoff
+	--		--High for high cutoff
+	--
+	--		--low sets color below --Low
+	--		--normal sets color between --Low and --High
+	--		--high sets color below --High
+	--
+	--	The --template option controls display.
+	--	Text color set by <fc></fc>.
+	--	For more detail see: http://projects.haskell.org/xmobar/#system-monitor-plugins
+	, commands = 
+
+		-- weather monitor
+		--		note the earlier %KORD% references this
+		--		also note KORD is Chicago's O'Hare airport
+		[ Run Weather "KORD" [ "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>% | <fc=#4682B4><pressure></fc>hPa"
+							 ] 3600
+
+		-- dynamic network monitor 
+		, Run DynNetwork	[ "--template"  , "<dev>: <tx>kB/s|<rx>kB/s"
+							, "--Low"	    , "1000"		-- units: kB/s
+							, "--High"	    , "5000"		-- units: kB/s
+							, "--low"		, "darkgreen"
+							, "--normal"	, "darkorange"
+							, "--high"		, "darkred"
+							] 10
+
+		-- cpu activity monitor
+		, Run MultiCpu		[ "--template" , "Cpu: <total0>%|<total1>%|<total2>%|<total3>%"
+							, "--Low"	    , "50"		-- units: %
+							, "--High"	    , "85"		-- units: %
+							, "--low"		, "darkgreen"
+							, "--normal"	, "darkorange"
+							, "--high"		, "darkred"
+							] 10
+
+		-- cpu core temperature monitor
+		, Run CoreTemp		[ "--template" , "Temp: <core0>°C|<core1>°C"
+							, "--Low"	    , "70"		-- units: °C
+							, "--High"	    , "80"		-- units: °C
+							, "--low"		, "darkgreen"
+							, "--normal"	, "darkorange"
+							, "--high"		, "darkred"
+							] 50
+
+		-- memory usage monitor
+		, Run Memory		[ "--template" , "Mem: <usedratio>%"
+							, "--Low"	    , "20"		-- units: %
+							, "--High"	    , "90"		-- units: %
+							, "--low"		, "darkgreen"
+							, "--normal"	, "darkorange"
+							, "--high"		, "darkred"
+							] 10
+
+		-- battery monitor
+		, Run Battery		[ "--template"  , "Batt: <acstatus>"
+							, "--Low"	    , "10"		-- units: %
+							, "--High"	    , "80"		-- units: %
+							, "--low"		, "darkred"
+							, "--normal"	, "darkorange"
+							, "--high"		, "darkgreen"
+
+							, "--" -- battery specific options
+								-- discharging status
+								, "-o"	, "<left>% (<timeleft>)"
+								-- AC "on" status
+								, "-O"	, "<fc=#dAA520>Charging</fc>"
+								-- charged status
+								, "-i"	, "<fc=#006000>Charged</fc>"
+							] 50
+
+		-- time and date indicator
+		--		format same as date; see man date
+		, Run Date		"<fc=#ABABAB>%F (%a) %H:%M</fc>" "date" 10
+
+		]
+}

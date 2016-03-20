@@ -1,0 +1,33 @@
+!! Section: solarized color scheme 
+! Black + DarkGrey; solarized base02+03
+*color0:	#073642
+*color8:	#002b36
+! DarkRed + Red; sol red + orange
+*color1:	#dc322f
+*color9:	#cb4b16
+! DarkGreen + Green; sol green + base01 
+*color2:	#859900
+*color10:	#586e75
+! DarkYellow + Yellow; sol yellow + base00
+*color3:	#b58900
+*color11:	#657b83
+! DarkBlue + Blue; sol blue + base0
+*color4:	#268bd2
+*color12:	#839496
+! DarkMagenta + Magenta; sol magenta + violet
+*color5:	#d33682
+*color13:	#6c71c4
+! DarkCyan + Cyan; sol cyan + base1
+*color6:	#2aa198
+*color14:	#93a1a1
+! LightGrey + White; sol base2 + base3
+*color7:	#eee8d5
+*color15:	#fdf6e3
+
+
+!! Section: urxvt settings
+! ISSUE- why does not urxvt see the *color* values above?
+urxvt.background:	#002b36
+urxvt.foreground:	#839496
+urxvt.font:			xft:SourceCodePro:size=12
+
