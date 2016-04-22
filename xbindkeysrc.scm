@@ -1,8 +1,10 @@
-(xbindkey '("XF86Standby") "sudo killall dhcpcd && sudo pm-suspend")
-(xbindkey '("XF86AudioRaiseVolume") "amixer set Master 2dB+ unmute")
+(xbindkey '("Print") "maim -s ~/Pictures/$(date +%F_%T).png")
 (xbindkey '("XF86AudioLowerVolume") "amixer set Master 2dB- unmute")
+(xbindkey '("XF86AudioRaiseVolume") "amixer set Master 2dB+ unmute")
 (xbindkey '("XF86AudioMute") "amixer set Master toggle")
-(xbindkey '("XF86AudioPlay") "deadbeef --play-pause")
 (xbindkey '("XF86AudioNext") "deadbeef --next")
+(xbindkey '("XF86AudioPlay") "deadbeef --play-pause")
 (xbindkey '("XF86AudioPrev") "deadbeef --prev")
 (xbindkey '("XF86AudioStop") "deadbeef --stop")
+(xbindkey '("XF86Standby") "sudo killall dhcpcd && sudo pm-suspend")
+
