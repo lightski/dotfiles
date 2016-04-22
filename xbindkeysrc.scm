@@ -1,4 +1,5 @@
 (xbindkey '("Print") "maim -s ~/Pictures/$(date +%F_%T).png")
+(xbindkey '("XF86Display") "~/.dotfiles/toggle-ext-mon.sh")
 (xbindkey '("XF86AudioLowerVolume") "amixer set Master 2dB- unmute")
 (xbindkey '("XF86AudioRaiseVolume") "amixer set Master 2dB+ unmute")
 (xbindkey '("XF86AudioMute") "amixer set Master toggle")
@@ -6,5 +7,5 @@
 (xbindkey '("XF86AudioPlay") "deadbeef --play-pause")
 (xbindkey '("XF86AudioPrev") "deadbeef --prev")
 (xbindkey '("XF86AudioStop") "deadbeef --stop")
-(xbindkey '("XF86Standby") "sudo killall dhcpcd && sudo pm-suspend")
-
+(xbindkey '("XF86ScreenSaver") "xscreensaver-command -lock")
+(xbindkey '("XF86Sleep") "echo 'this one does not work' && /usr/bin/pm-suspend")')
