@@ -8,4 +8,3 @@
 (xbindkey '("XF86AudioPrev") "deadbeef --prev")
 (xbindkey '("XF86AudioStop") "deadbeef --stop")
 (xbindkey '("XF86ScreenSaver") "xscreensaver-command -lock")
-(xbindkey '("XF86Sleep") "echo 'this one does not work' && /usr/bin/pm-suspend")')

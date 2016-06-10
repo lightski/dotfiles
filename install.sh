@@ -13,8 +13,13 @@ ln -sf ~/.dotfiles/xmobarrc ~/.xmobarrc
 ln -sf ~/.dotfiles/xmonad.hs ~/.xmonad/xmonad.hs
 ln -sf ~/.dotfiles/Xresources ~/.Xresources
 
-# add custom environment bits to oh-my-zsh
+# link custom environment bits to oh-my-zsh
 for fle in $(ls custom_omz); do
 	ln -sf ~/.dotfiles/custom_omz/$fle ~/.oh-my-zsh/custom/$fle
 done
 
+# install vundle for vim plugin management
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# download setup vim plugins in .vim/bundle/
+vim +PluginInstall +qall
