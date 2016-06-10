@@ -6,18 +6,20 @@ Super basic dotfiles repository. Tracks my basic configs for:
 - zsh
 
 Other solutions seemed heavy-handed for this, so I opted for a barebones shell script.
-Note you will need to install the tools on your system. This repo is only configuration.
+These configuraitons have only been tested on Arch Linux but *should* work elsewhere.
 
 ## Installation
-1.	 Clone this repo (preferably into ~/.dotfiles)
-2.	 Run install.sh
+0.	Have git, vim, and zsh with oh-my-zsh.
+1.	Clone this repo (preferably into ~/.dotfiles)
+2.	Run install.sh
 	```
 		chmod u+x install.sh && ./install.sh
 	```
-3.	 Open a new shell to see effects
+3.	Open a new shell to see effects
 
 ## TODO
-[*]Refactor vim configuration? Could increase modularity by adding individual files to .vim/config/
+[*] Refactor vim configuration? Make more individual files in .vim/*.vim/
+[] ???
 
 ## Disclaimer
 Use these configs however you like; I am not responsible for what you do.
