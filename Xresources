@@ -24,10 +24,20 @@
 *color7:	#eee8d5
 *color15:	#fdf6e3
 
-
 !! Section: urxvt settings
 ! ISSUE- why does not urxvt see the *color* values above?
-urxvt.background:	#002b36
-urxvt.foreground:	#839496
-urxvt.font:			xft:SourceCodePro:size=12
+URxvt.background:	#002b36
+URxvt.foreground:	#839496
+URxvt.font:			xft:SourceCodePro:size=12
+! subsection: settings for urxvt-perls
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+!! Section: bell urgency
+URxvt*visualBell: true
+URxvt*bellIsUrgent: true
 

@@ -5,4 +5,5 @@ xscreensaver &
 xmobar &
 sleep 60 && owncloud &
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+xcompmgr -c &
 exec xmonad

@@ -37,7 +37,7 @@ python3 powerline_setup()
 python3 del powerline_setup
 
 " use folder for config files
-runtime! config/*.vim
+runtime nerdtree.vim
 
 " get simplenote login creds
 source ~/.simplenoterc
