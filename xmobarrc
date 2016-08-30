@@ -17,6 +17,8 @@ Config {
 	, alignSep = "}{"	-- separator between left-right alignment
 	, template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %KORD% | %date% "
 
+	-- add %default:Master% to template for volume
+
 	-- plugins
 	--	Numbers can be autocolored.
 	--	xmobar decides color based on 3-tier/2-cutoff
@@ -95,6 +97,9 @@ Config {
 		-- time and date indicator
 		--		format same as date; see man date
 		, Run Date		"<fc=#ABABAB>%F (%a) %H:%M</fc>" "date" 10
+
+		-- volume mixer; broken
+		--, Run Volume		"default" "Master" [] 10
 
 		]
 }
