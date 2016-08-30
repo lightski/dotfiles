@@ -21,7 +21,8 @@ inoremap <Nul> <c-n>
 " ctags binding to F12
 map <f12> :!ctags -R .<cr>
 " simplernote
-cmap Sn Simplenote -
+cmap Snl SimplenoteList
+cmap Snu SimplenoteUpdate
 " save files as sudo even if not started as sudo
 cmap w!! w !sudo tee > /dev/null %
 " f4 toggles search highlighting and show current value
