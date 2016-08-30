@@ -14,6 +14,7 @@ set encoding=utf-8
 set tabstop=4		"sane editing
 set shiftwidth=4
 set softtabstop=4
+set wildmenu	"better tab completion
 
 " key re-binds
 inoremap <c-space> <c-n> "autocompletion with ctrl+space
