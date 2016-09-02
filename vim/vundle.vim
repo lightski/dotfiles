@@ -37,6 +37,8 @@ Plugin 'stephpy/vim-yaml'
 Plugin 'mrtazz/simplenote.vim' 
 " fix paste from outside
 Plugin 'ConradIrwin/vim-bracketed-paste'
+" js indentation + syntax
+Plugin 'pangloss/vim-javascript'
 
 " vim-scripts repos
 "Plugin 'L9'
