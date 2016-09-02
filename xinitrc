@@ -4,6 +4,7 @@ xbindkeys &
 xscreensaver &
 xmobar &
 sleep 60 && owncloud &
+sleep 60 && dropbox &
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 xcompmgr -c &
 exec xmonad

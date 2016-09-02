@@ -18,8 +18,8 @@ These configuraitons have only been tested on Arch Linux but *should* work elsew
 3.	Open a new shell to see effects
 
 ## TODO
+*	Move dropbox/owncloud configs from xinitrc to /etc/netctl/interfaces/wls1	
 *	Refactor vim configuration? Make more individual files in .vim/*.vim/
-*	???
 
 ## Disclaimer
 Use these configs however you like; I am not responsible for what you do.
