@@ -5,6 +5,7 @@
 # put basic dotfiles in place
 ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/jshintrc ~/.jshintrc
+ln -sf ~/.dotfiles/vdirsyncer ~/.vdirsyncer
 ln -sf ~/.dotfiles/vimrc ~/.vimrc
 ln -sf ~/.dotfiles/xbindkeysrc.scm ~/.xbindkeysrc.scm
 ln -sf ~/.dotfiles/xinitrc ~/.xinitrc
