@@ -5,5 +5,6 @@ xscreensaver &
 xmobar &
 xcompmgr -c &
 ~/.dotfiles/start-owncloud.sh &
+eval $(ssh-agent)
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 exec xmonad
