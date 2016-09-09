@@ -31,3 +31,7 @@ fi
 
 # download setup vim plugins in .vim/bundle/
 vim +PluginInstall +qall
+
+# final steps
+echo "Complete vdirsyncer setup by editing vdirsyncer/example-get-creds.sh then save it to get-creds.sh"
+

@@ -1,3 +1,3 @@
 vdirsyncer/get-creds.sh
-vdirsyncer/sync/*
+vdirsyncer/status/*
 vim/bundle/*
