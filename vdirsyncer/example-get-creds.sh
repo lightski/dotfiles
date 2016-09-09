@@ -3,14 +3,23 @@
 # note that -gt 0 processes one arg at a time
 # use -gt 1 to process two for -key value pairs
 
-# install: replace remote-user and remote-pass below 
-#  for whatever service you're syncing with
+# install: replace url, user, pass, etc. below 
+#  with details of service you're syncing with
+#  remember to save as get-creds.sh and make it executable!
 out=""
 while [[ $# -gt 0 ]]
 do
 	key="$1"
 	
 	case $key in
+		-c|--contacts)
+			out="https://example.com/contact/sync/addr/"
+			shift
+			;;
+		-d|--calendar)
+			out="https://example.com/calendar/sync/addr/"
+			shift
+			;;
 		-u|--user)
 			out="remote-user"
 			shift
