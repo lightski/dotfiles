@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/danlei/.gnome'
 let g:netrw_dirhist_2='/home/danlei/elightenment'
 let g:netrw_dirhist_3='/home/danlei/elightenment/sac'
+let g:netrw_dirhist_4='/home/daniel/.dotfiles/vim/bundle/Vundle.vim'
