@@ -88,6 +88,7 @@ set encoding=utf-8
 set tabstop=4		"sane editing
 set shiftwidth=4
 set softtabstop=4
+set expandtab " tabs are spaces
 set wildmenu	"better tab completion
 " }}}
 

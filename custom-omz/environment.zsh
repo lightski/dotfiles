@@ -1,6 +1,6 @@
 # extra omz environment settings
 # overwrite bin to use the dotfiles bin as well
-export PATH=$HOME/.dotfiles/bin:/usr/local/bin:$HOME/android-studio/bin:$PATH
+export PATH=$HOME/.bin:/usr/local/bin:$HOME/android-studio/bin:$PATH
 # setup for android dev on meteor
 export ANDROID_HOME=$HOME/Android/Sdk
 # 256 color mode go
