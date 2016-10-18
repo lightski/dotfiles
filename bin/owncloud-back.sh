@@ -2,6 +2,8 @@
 # copies important laptop files to owncloud in case of HDD fail
 #  NOTE removed projects dir due to size concern. Re-add later if you compress these first!
 # @TODO -delete entries older than $timeframe (3 months/ 1 year?)
+#       -run full backup monthly then incremental otherwise (also fixes problem of deleting old)
+#           ie, change 'latest' to most-recent-full backup
 declare -a dirs=("/home/daniel/Documents/iit/sem5" "/home/daniel/Documents/wikis")
 dest="/home/daniel/ownCloud/backup"
 date=`date "+%Y%m%d_%H%M%S"`
