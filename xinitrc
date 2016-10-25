@@ -3,7 +3,7 @@ feh --bg-fill ~/Pictures/Wallpapers/hyper-light-drifter.png &
 xscreensaver &
 xmobar &
 xcompmgr -c &
-~/.dotfiles/start-owncloud.sh &
+~/.dotfiles/bin/start-owncloud.sh &
 eval $(keychain --eval --quiet --noask --confhost)
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 exec xmonad
