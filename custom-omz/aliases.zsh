@@ -61,3 +61,14 @@ alias vup='vagrant up'
 alias vha='vagrant halt'
 alias vsh='vagrant ssh'
 alias vst='vagrant status'
+
+# 20161028 colored man (via archlinux wiki)
+man() {
+    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[01;44;33m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[01;32m' \
+    command man "$@"
+}

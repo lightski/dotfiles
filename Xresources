@@ -24,20 +24,25 @@
 *color7:	#eee8d5
 *color15:	#fdf6e3
 
+!! Section: URxvt appearance
+URxvt*background:   #002b36
+URxvt*foreground:	#839496
+urxvt*font:         xft:Anonymous Pro:size=14,\
+                    -misc-powerlinesymbols-medium-r-normal-*-17-*-*-*-*-*-*-*
+!                    xft:Powerline Symbols:size=14
+!URxvt*font:     xft:Terminus:size=14
+URxvt*scrollBar:    false
+
 !! Section: urxvt settings
-! ISSUE- why does not urxvt see the *color* values above?
-URxvt.background:	#002b36
-URxvt.foreground:	#839496
-URxvt.font:			xft:SourceCodePro:size=12
 ! subsection: settings for urxvt-perls
 URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
-URxvt.url-select.launcher:  firefox
+URxvt.url-select.launcher:  /usr/bin/firefox
 URxvt.url-select.underline: true
 URxvt.keysym.M-u:           perl:url-select:select_next
 URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 
-!! Section: bell urgency
+! subsection: bell urgency
 URxvt*visualBell: true
 URxvt*bellIsUrgent: true
 

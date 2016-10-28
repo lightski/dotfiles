@@ -9,7 +9,7 @@ date=`date "+%Y%m%d_%H%M%S"`
 #  for SOME reason -e returns false, but -L correctly sees file here. weird...
 if [ -L "$dest/full-monthly" ]; then 
     thismonth=${date:4:2}
-    monthsym=`ls -l | grep full-monthly`
+    monthsym=`ls -l $dest | grep full-monthly`
     lastmonth=${monthsym:65:2}
     if [ $(($thismonth-$lastmonth)) -eq 0 ]; then
         # backup diff, ie copy if unchanged from monthly backup.
