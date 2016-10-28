@@ -27,9 +27,10 @@
 !! Section: URxvt appearance
 URxvt*background:   #002b36
 URxvt*foreground:	#839496
-urxvt*font:         xft:Anonymous Pro:size=14,\
+URxvt*font:         xft:Anonymous Pro:size=14,\
                     -misc-powerlinesymbols-medium-r-normal-*-17-*-*-*-*-*-*-*
-!                    xft:Powerline Symbols:size=14
+!URxvt*font:         xft:Inconsolata for Powerline Nerd Font Complete Mono:size=14
+!URxvt*font: xft:3270 Narrow Nerd Font Complete:size=14
 !URxvt*font:     xft:Terminus:size=14
 URxvt*scrollBar:    false
 

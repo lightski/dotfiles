@@ -1,3 +1,3 @@
 " graphical vim settings, eg gvim
-set guifont=Source\ Code\ Pro\ Medium\ 12
+set guifont=Anonymous\ Pro\ 12
 
