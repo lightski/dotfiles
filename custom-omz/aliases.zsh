@@ -72,3 +72,7 @@ man() {
     LESS_TERMCAP_us=$'\e[01;32m' \
     command man "$@"
 }
+
+# 20161029 load php dev environment
+alias sam='sudo systemctl start httpd && sudo systemctl start mariadb'
+

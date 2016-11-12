@@ -24,17 +24,15 @@
 *color7:	#eee8d5
 *color15:	#fdf6e3
 
-!! Section: URxvt appearance
+!! Section: urxvt settings
+! subsection: URxvt appearance
 URxvt*background:   #002b36
 URxvt*foreground:	#839496
-URxvt*font:         xft:Anonymous Pro:size=14,\
-                    -misc-powerlinesymbols-medium-r-normal-*-17-*-*-*-*-*-*-*
-!URxvt*font:         xft:Inconsolata for Powerline Nerd Font Complete Mono:size=14
-!URxvt*font: xft:3270 Narrow Nerd Font Complete:size=14
-!URxvt*font:     xft:Terminus:size=14
+URxvt*font:         xft:InconsolataForPowerline Nerd Font:size=12,\
+                    xft:Anonymous Pro:size=12,\
+                    xft:Terminus:size=12
 URxvt*scrollBar:    false
 
-!! Section: urxvt settings
 ! subsection: settings for urxvt-perls
 URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
 URxvt.url-select.launcher:  /usr/bin/firefox

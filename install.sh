@@ -3,8 +3,8 @@
 # !!!warning- clobbers existing files
 
 # put basic dotfiles in place
-declare -a files=("gitconfig" "gvimrc" "jshintrc" "vimrc" "xinitrc" "xmobarrc"\
-    "xmonad/xmonad.hs" "Xresources" "zshrc")
+declare -a files=("gitconfig" "gvimrc" "jshintrc" "ocamlinit" "utoprc"\
+    "vimrc" "xinitrc" "xmobarrc" "xmonad/xmonad.hs" "Xresources" "zshrc" )
 for afile in "${files[@]}"; do
     ln -sf ~/.dotfiles/$afile ~/.$afile
 done

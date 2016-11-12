@@ -1,5 +1,5 @@
 redshift -l 41:-87 &
-feh --bg-fill ~/Pictures/Wallpapers/hyper-light-drifter.png &
+feh --bg-scale ~/Pictures/Wallpapers/anton-fadeev-image.jpg &
 xscreensaver &
 xmobar &
 xcompmgr -c &

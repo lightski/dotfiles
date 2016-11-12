@@ -98,8 +98,8 @@ inoremap <Nul> <c-n>
 " ctags binding to F12
 map <f12> :!ctags -R .<cr>
 " simplernote
-cmap Snl SimplenoteList
-cmap Snu SimplenoteUpdate
+cmap snl SimplenoteList
+cmap snu SimplenoteUpdate
 " save files as sudo even if not started as sudo
 cmap w!! w !sudo tee > /dev/null %
 " f4 toggles search highlighting and show current value
@@ -118,4 +118,6 @@ python3 powerline_setup()
 python3 del powerline_setup
 " }}}
 
+" ocaml indentation helper
+set rtp^="/home/daniel/.opam/system/share/ocp-indent/vim"
 

@@ -1,3 +1,3 @@
 " graphical vim settings, eg gvim
-set guifont=Anonymous\ Pro\ 12
+set guifont=InconsolataForPowerline\ Nerd\ Font\ 12
 

@@ -14,3 +14,6 @@ export VISUAL="vim"
 
 # don't show user when logged in 
 DEFAULT_USER="daniel"
+
+# ocaml setup
+. /home/daniel/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
