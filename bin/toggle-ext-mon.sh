@@ -3,7 +3,7 @@
 # toggles on/off external monitors
 
 IN="LVDS1"
-EXT1="VGA1"
+EXT1="VGA2"
 EXT2="HDMI1"
 
 if (xrandr | grep "$EXT1 disconnected"); then

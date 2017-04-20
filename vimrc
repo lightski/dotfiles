@@ -69,10 +69,14 @@ nmap <leader>d :NERDTreeToggle<CR>
 " get simplenote login creds
 source ~/.simplenoterc
 
-" special rules for syntastic syntax checker
+" syntastic recommended settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatusLineFlag()}
+set statusline+=%*
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntasti_check_on_open = 1
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " set vimwiki locations
@@ -88,7 +92,7 @@ set encoding=utf-8
 set tabstop=4		"sane editing
 set shiftwidth=4
 set softtabstop=4
-set expandtab " tabs are spaces
+set expandtab "tabs are spaces
 set wildmenu	"better tab completion
 " }}}
 
@@ -112,12 +116,14 @@ colorscheme solarized
 " }}}
 
 " vim statusline {{{
-" AWEsome. Note this is installed systemwide via pip
+" installed systemwide via pacman
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
 " }}}
 
-" ocaml indentation helper
+" ocaml indentation helper {{{
 set rtp^="/home/daniel/.opam/system/share/ocp-indent/vim"
+" }}}
+
 

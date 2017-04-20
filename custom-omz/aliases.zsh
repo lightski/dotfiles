@@ -75,4 +75,8 @@ man() {
 
 # 20161029 load php dev environment
 alias sam='sudo systemctl start httpd && sudo systemctl start mariadb'
+alias nosam='sudo systemctl stop httpd && sudo systemctl stop mariadb'
+
+# 20170313 launch steam through wine
+alias wine-steam='WINEARCH=win32 WINEPREFIX=~/.wine32 wine ~/.wine32/drive_c/Program\ Files/Steam/Steam.exe'
 

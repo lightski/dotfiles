@@ -1,7 +1,7 @@
-# extra omz environment settings
+#extra omz environment settings
 # overwrite bin to use the dotfiles bin as well
-export PATH=$HOME/.bin:/usr/local/bin:$HOME/android-studio/bin:/opt/clojurescript/bin/:$PATH
-# setup for android dev on meteor
+export PATH=$HOME/.bin:/usr/local/bin:$HOME/android-studio/bin:/opt/clojurescript/bin/:$HOME/.meteor:$PATH
+# setup for android dev
 export ANDROID_HOME=$HOME/Android/Sdk
 # 256 color mode go
 if [ "$TERM" = "xterm" ]; then
