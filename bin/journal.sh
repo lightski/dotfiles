@@ -6,6 +6,8 @@
 # Known limitation: needs 1+ lines of whitespace at top of journal
 #   else it will place insertion in middle of last entry
 #   this is due to behavior of vim's r option
+# POSSIBLE flaw: sets g:vimwiki_current_idx directory directly
+#   see ./vimiki-index.sh for another approach
 # -----------------------------------------------------------
 export DISPLAY=:0
 if [ $(date +%H) -lt 17 ]; then
