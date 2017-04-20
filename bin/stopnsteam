@@ -1,0 +1,3 @@
+kill $(pgrep owncloud)
+sudo systemctl stop journal.timer
+steam-preload
