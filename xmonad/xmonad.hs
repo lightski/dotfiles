@@ -29,15 +29,14 @@ myConfig = def
         , normalBorderColor = "#073642"
         , focusedBorderColor = "#2aa198"
         } `additionalKeys` --discover key numbers: xev
-        [
-            -- meta-i opens journal
+        [-- meta-i opens journal
             ((mod4Mask, xK_i), spawn "~/.dotfiles/bin/journal"),
             -- meta+shift+i opens wiki
-            ((mod4Mask .|. shiftMasks, xK_i), spawn "~/.dotfiles/bin/wiki-index"),
+            ((mod4Mask .|. shiftMask, xK_i), spawn "~/.dotfiles/bin/wiki-index"),
             --next keys: 0 indicates no leader key. These are mostly media keys
-            ((0, 0x1008ff11), spawn "amixer -M set Master 5%- unmute"),
+            ((0, 0x1008ff11), spawn "amixer -M set Master 2%- unmute"),
             ((0, 0x1008ff12), spawn "amixer set Master toggle"),
-            ((0, 0x1008ff13), spawn "amixer -M set Master 5%+ unmute"),
+            ((0, 0x1008ff13), spawn "amixer -M set Master 2%+ unmute"),
             ((0, 0x1008ff14), spawn "deadbeef --play-pause"),
             ((0, 0x1008ff15), spawn "deadbeef --stop"),
             ((0, 0x1008ff16), spawn "deadbeef --prev"),
