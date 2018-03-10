@@ -104,6 +104,7 @@ map <f12> :!ctags -R .<cr>
 " simplernote
 cmap snl SimplenoteList
 cmap snu SimplenoteUpdate
+cmap snn SimplenoteNew
 " save files as sudo even if not started as sudo
 cmap w!! w !sudo tee > /dev/null %
 " f4 toggles search highlighting and show current value

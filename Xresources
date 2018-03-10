@@ -28,9 +28,10 @@
 ! subsection: URxvt appearance
 URxvt*background:   #002b36
 URxvt*foreground:	#839496
-URxvt*font:         xft:InconsolataForPowerline Nerd Font:size=12,\
+URxvt*font:         xft:Inconsolata Nerd Font Mono:size=12,\
+                    xft:TerminessTTF Nerd Font:pixelsize=32:style=bold,\
                     xft:Anonymous Pro:size=12,\
-                    xft:Terminus:size=12
+                    -xos4-terminus-medium-r-normal--16-*-*-*-*-*-*-*
 URxvt*scrollBar:    false
 
 ! subsection: settings for urxvt-perls

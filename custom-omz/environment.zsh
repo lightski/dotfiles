@@ -1,6 +1,6 @@
 #extra omz environment settings
 # overwrite bin to use the dotfiles bin as well
-export PATH=$HOME/.bin:/usr/local/bin:$HOME/android-studio/bin:/opt/clojurescript/bin/:$HOME/.meteor:$PATH
+export PATH=$HOME/.bin:/usr/local/bin:$HOME/android-studio/bin:/opt/clojurescript/bin/:$HOME/.meteor:~/.gem/ruby/2.4.0/bin:$PATH
 # setup for android dev
 export ANDROID_HOME=$HOME/Android/Sdk
 # 256 color mode go
