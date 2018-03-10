@@ -2,25 +2,31 @@
 # installs dotfiles by symlinking
 # !!!warning- clobbers existing files
 
+installdir=$(echo ~/.dotfiles)
+
 # put basic dotfiles in place
-declare -a files=("gitconfig" "gvimrc" "jshintrc" "ocamlinit" "utoprc"\
-    "vimrc" "xinitrc" "xmobarrc" "xmonad/xmonad.hs" "Xresources" "zshrc" )
-for afile in "${files[@]}"; do
-    ln -sf ~/.dotfiles/$afile ~/.$afile
+for afile in $(ls $installdir/settings); do
+    ln -sf $installdir/settings/$afile ~/.$afile
 done
+
+# set up xmonad dir and config
+if [ ! -d ~/.xmonad ]; then
+    mkdir ~/.xmonad
+fi
+ln -sf $installdir/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
 
 # only symlink dirs if not linked already 
 #  (else creates nested symlinks)
 declare -a dirs=("bin" "vdirsyncer" "vim")
 for dir in "${dirs[@]}"; do
     if [ ! -d ~/.$dir ]; then
-        ln -sf "~/.dotfiles/$dir" "~/$dir"
+        ln -sf $installdir/$dir ~/$dir
     fi
 done
 
 # link custom environment bits to oh-my-zsh
-for fle in $(ls custom-omz); do
-	ln -sf ~/.dotfiles/custom-omz/$fle ~/.oh-my-zsh/custom/$fle
+for fle in $(ls $installdir/custom-omz); do
+	ln -sf $installdir/custom-omz/$fle ~/.oh-my-zsh/custom/$fle
 done
 
 # if missing, install vundle for vim plugin management
