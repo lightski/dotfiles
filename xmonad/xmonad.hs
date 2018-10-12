@@ -3,8 +3,9 @@ import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.ManageDocks
-import XMonad.Util.EZConfig(additionalKeys)
 import XMonad.Hooks.ManageHelpers(doFullFloat, isFullscreen, isDialog)
+import XMonad.Layout.NoBorders
+import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 
 -- main function launches xmobar then reads config
@@ -21,7 +22,7 @@ myManageHook = composeAll
 myConfig = def
         { workspaces = ["1", "2:web", "3", "4", "5", "6", "7", "8", "9"]
         , manageHook = myManageHook
-        , layoutHook = avoidStruts $ layoutHook def
+        , layoutHook = smartBorders . avoidStruts $ layoutHook def
         , handleEventHook = fullscreenEventHook
         , terminal = "urxvt"
         , modMask = mod4Mask
