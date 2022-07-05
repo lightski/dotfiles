@@ -41,6 +41,10 @@ Plugin 'mrtazz/simplenote.vim'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 " js indentation + syntax
 Plugin 'pangloss/vim-javascript'
+" unit tests
+Plugin 'junegunn/vader.vim'
+" haskell 
+Plugin 'neovimhaskell/haskell-vim.git'
 
 " vim-scripts repos
 "Plugin 'L9'

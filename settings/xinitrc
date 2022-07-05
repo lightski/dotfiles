@@ -1,6 +1,5 @@
 redshift -l 41:-87 &
 feh --bg-scale ~/Pictures/Wallpapers/Walka.jpg &
-xscreensaver -no-splash &
 eval $(keychain --eval --quiet --noask --confhost)
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 xmodmap ~/.Xmodmap

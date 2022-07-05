@@ -81,5 +81,7 @@ alias nosam='sudo systemctl stop httpd && sudo systemctl stop mariadb'
 alias wine-steam='WINEARCH=win32 WINEPREFIX=~/.wine32 wine ~/.wine32/drive_c/Program\ Files/Steam/Steam.exe'
 
 # 180818 faster dir access
-hash -d game=~/code/python/gamepy/engine
+alias game='cd ~/code/python/gamepy/engine'
 
+# 190227
+alias archup='sudo pacman -Syu ; xmonad --recompile'
